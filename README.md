@@ -4,9 +4,9 @@
 
 ## Team
 
-  - __Product Owner__: Keeley Nakamoto
-  - __Scrum Master__: Gabriel Schrock
-  - __Development Team Members__: Leo Vergara, (Nick Fleischhauer)
+  - __Product Owner__: SB Lee
+  - __Scrum Master__: Brent 
+  - __Development Team Members__: Roger Sejas, Nick Randall
 
 ## Table of Contents
 
