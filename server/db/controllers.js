@@ -25,13 +25,13 @@ module.exports = {
   },
   //function not being used...
   fetchOne: function(id, callback) {
-    Restaurant.findById(id).then(function(err, restaurant) {
-      if (err) {
-        console.log(err);
-      } else {
+    Restaurant.findById(id).then(function(restaurant){
         callback(restaurant);
       }
-    })
+    )
+    .catch(function(err){
+      console.log(err);
+    });
   },
 
   addRestaurantReview: function(restaurant, callback) {
@@ -42,13 +42,13 @@ module.exports = {
       } else {
         callback(newEntry);
       }
-    })
+    });
   },
   //function not being used...
   updateOne: function(id, newProperties, callback) {
     Restaurant.findByIdAndUpdate(id, newProperties)
-      .then(function (updatedRestaurant) {
-        callback(updatedRestaurant);
+      .then(function () {
+        callback("Restaurant Updated");
       })
       .catch(function (err) {
       console.log(err);
